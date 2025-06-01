@@ -15,7 +15,6 @@ interface ComboBoxProps {
 const ComboBox: React.FC<ComboBoxProps> = ({ options, placeholder = 'Select an option...', onSelect, label }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedValue, setSelectedValue] = useState<string | null>(null);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -37,7 +36,6 @@ const ComboBox: React.FC<ComboBoxProps> = ({ options, placeholder = 'Select an o
   );
 
   const handleSelect = (option: ComboBoxOption) => {
-    setSelectedValue(option.label);
     setSearchTerm(option.label);
     setIsOpen(false);
     if (onSelect) {
@@ -73,7 +71,6 @@ const ComboBox: React.FC<ComboBoxProps> = ({ options, placeholder = 'Select an o
           onChange={e => {
             setSearchTerm(e.target.value);
             setIsOpen(true);
-            setSelectedValue(null); // Clear selected value when typing
             setHighlightedIndex(-1);
           }}
           onClick={() => setIsOpen(!isOpen)}

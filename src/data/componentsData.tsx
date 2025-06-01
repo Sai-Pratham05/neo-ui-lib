@@ -181,7 +181,7 @@ const componentsData: componentsDataType = [
         items={[
           { label: "Home", to: "#" },
           { label: "Components", to: "#" },
-          { label: "Breadcrumb", to: "#" },
+          { label: "Neo-ui-lib", to: "#" },
         ]}
       />
     ),
@@ -193,16 +193,16 @@ const componentsData: componentsDataType = [
     path: "combobox",
     component: (
       <ComboBox
-        label="Choose a Fruit"
+        label="Choose a Framework"
         options={[
-          { value: "apple", label: "Apple" },
-          { value: "banana", label: "Banana" },
-          { value: "cherry", label: "Cherry" },
-          { value: "date", label: "Date" },
-          { value: "elderberry", label: "Elderberry" },
-          { value: "fig", label: "Fig" },
+          { value: "React", label: "React" },
+          { value: "Vue", label: "Vue" },
+          { value: "Angular", label: "Angular" },
+          { value: "Svelte", label: "Svelte" },
+          { value: "Solid", label: "Solid" },
+          { value: "Qwik", label: "Qwik" },
         ]}
-        placeholder="Select a fruit..."
+        placeholder="Select a Framework..."
       />
     ),
     markup: comboBoxMarkup,
