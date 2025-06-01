@@ -8,7 +8,7 @@ import Card from "../components/Card";
 import { CopiedCodeDispatchContext } from "../context/CopiedCodeContext";
 import cardMarkup from "../data/cardMarkup";
 import componentsData from "../data/componentsData";
-import SampleImage from "../assets/neo-brutalism-image1.jpg";
+import SampleImage from "../assets/neo-brutalism-image1.webp";
 import githubIcon from "../assets/github.svg";
 import IconButton from "../components/IconButton";
 

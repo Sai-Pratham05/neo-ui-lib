@@ -10,6 +10,9 @@ import IconButton from "../components/IconButton";
 import Input from "../components/Input";
 import ToggleSwitch from "../components/ToggleSwitch";
 import ProgressBar from "../components/ProgressBar";
+import Carousel from "../components/Carousel";
+import Breadcrumb from "../components/Breadcrumb";
+import ComboBox from "../components/ComboBox";
 import IconButtonMarkup from "./iconButtonMarkup";
 import buttonMarkup from "./buttonMarkup";
 import cardMarkup from "./cardMarkup";
@@ -19,7 +22,10 @@ import dropdownMarkup from "./dropdownMarkup";
 import inputMarkup from "./inputMarkup";
 import toggleSwitchMarkup from "./toggleSwitchMarkup";
 import progressBarMarkup from "./progressBarMarkup";
-import SampleImage from "../assets/neo-brutalism-image1.jpg";
+import carouselMarkup from "./carouselMarkup";
+import breadcrumbMarkup from "./breadcrumbMarkup";
+import comboBoxMarkup from "./comboBoxMarkup";
+import SampleImage from "../assets/neo-brutalism-image1.webp";
 
 export type componentsDataType = {
   name: string;
@@ -37,13 +43,13 @@ const componentsData: componentsDataType = [
       <div className="w-80">
         <Card
           thumbnail={SampleImage}
-          date="June 15th, 2023"
-          title="Neo Brutallism"
-          description="Neobrutalism is an aesthetic characterized by high contrast
+          date="March 20th, 2025"
+          title="Neo-ui-lib"
+          description="Neo-ui-lib is an aesthetic characterized by high contrast
               elements, bright colors, and bold shapes. It is often used to make
               a statement, as it is meant to be eye-catching and stand out to
               the viewer. It is also used in user interface and web design, with
-              features such as vibrant colors and bold shapes. Neobrutalism can
+              features such as vibrant colors and bold shapes. Neo-ui-lib can
               also be used in print design, with an example being a bold shape
               with a vibrant color fill applied to it."
           callToActionText="Get Started"
@@ -92,9 +98,9 @@ const componentsData: componentsDataType = [
     path: "input",
     component: (
       <div className="md:w-96 flex flex-col space-y-6">
-        <Input placeholder="you@example.com" />
-        <Input placeholder="you@example.com" rounded="md" />
-        <Input placeholder="you@example.com" rounded="full" />
+        <Input placeholder="yourname@example.com" />
+        <Input placeholder="yourname@example.com" rounded="md" />
+        <Input placeholder="yourname@example.com" rounded="full" />
       </div>
     ),
     markup: inputMarkup,
@@ -144,6 +150,62 @@ const componentsData: componentsDataType = [
     path: "progressBar",
     component: <ProgressBar currentValue={70} rounded="full" color="lime" />,
     markup: progressBarMarkup,
+    new: true,
+  },
+  {
+    name: "Carousel",
+    path: "carousel",
+    component: (
+      <Carousel
+        items={[
+          <div key="1" className="text-2xl font-bold text-gray-700">
+            Slide 1
+          </div>,
+          <div key="2" className="text-2xl font-bold text-gray-700">
+            Slide 2
+          </div>,
+          <div key="3" className="text-2xl font-bold text-gray-700">
+            Slide 3
+          </div>,
+        ]}
+      />
+    ),
+    markup: carouselMarkup,
+    new: true,
+  },
+  {
+    name: "Breadcrumb",
+    path: "breadcrumb",
+    component: (
+      <Breadcrumb
+        items={[
+          { label: "Home", to: "#" },
+          { label: "Components", to: "#" },
+          { label: "Breadcrumb", to: "#" },
+        ]}
+      />
+    ),
+    markup: breadcrumbMarkup,
+    new: true,
+  },
+  {
+    name: "ComboBox",
+    path: "combobox",
+    component: (
+      <ComboBox
+        label="Choose a Fruit"
+        options={[
+          { value: "Nextjs", label: "Nextjs" },
+          { value: "React", label: "React" },
+          { value: "React Native", label: "React Native" },
+          { value: "Nodejs", label: "Nodejs" },
+          { value: "Typescript", label: "Typescript" },
+          { value: "Tailwindcss", label: "Tailwindcss" },
+        ]}
+        placeholder="Select a Technology..."
+      />
+    ),
+    markup: comboBoxMarkup,
     new: true,
   },
 ];
