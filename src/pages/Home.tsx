@@ -107,7 +107,7 @@ const Home = () => {
                 title="Interested in viewing the code?"
                 description="Get ready for an in-depth exploration of the components in action within the codebase. Let's dive deep into how these components work behind the scenes!"
                 callToActionText="Go to Github Repository"
-                calllToActionLink="https://github.com/marieooq/neo-brutalism-ui-library"
+                calllToActionLink="https://github.com/Sai-Pratham05/neo-ui-lib"
               />
             </div>
           </div>
@@ -145,22 +145,22 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <footer className="w-full h-[200px] m-auto flex justify-between items-center px-5 md:px-24 2xl:p-32 bg-black">
+      <footer className="w-full h-[200px] m-auto flex justify-between items-center px-5 md:px-24 2xl:p-32 bg-orange-200">
         <div>
-          <Link to="/" className="text-2xl font-bold text-white">
+          <Link to="/" className="text-2xl font-bold text-black">
             Neo-ui-lib.
           </Link>
         </div>
         <div>
-          <small className="text-white">
+          <small className="text-black">
             &copy;
             {`${new Date().getFullYear()} `}
             <a
-              href="https://linktr.ee/marieotaki"
+              href="https://linkedin.com/in/sai-pratham-k-h"
               target="_blank"
               className="underline"
             >
-              Marie Otaki
+              Sai Pratham K H
             </a>
           </small>
         </div>

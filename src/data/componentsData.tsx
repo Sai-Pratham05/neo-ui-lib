@@ -195,14 +195,14 @@ const componentsData: componentsDataType = [
       <ComboBox
         label="Choose a Fruit"
         options={[
-          { value: "Nextjs", label: "Nextjs" },
-          { value: "React", label: "React" },
-          { value: "React Native", label: "React Native" },
-          { value: "Nodejs", label: "Nodejs" },
-          { value: "Typescript", label: "Typescript" },
-          { value: "Tailwindcss", label: "Tailwindcss" },
+          { value: "apple", label: "Apple" },
+          { value: "banana", label: "Banana" },
+          { value: "cherry", label: "Cherry" },
+          { value: "date", label: "Date" },
+          { value: "elderberry", label: "Elderberry" },
+          { value: "fig", label: "Fig" },
         ]}
-        placeholder="Select a Technology..."
+        placeholder="Select a fruit..."
       />
     ),
     markup: comboBoxMarkup,

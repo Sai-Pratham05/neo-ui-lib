@@ -37,4 +37,4 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items, separator = '/' }) => {
   );
 };
 
-export default Breadcrumb; 
+export default Breadcrumb;

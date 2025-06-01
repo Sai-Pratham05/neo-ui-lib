@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { withRouter } from "storybook-addon-react-router-v6";
 import Card from "../components/Card";
-import SampleImage from "../assets/neo-brutalism-image1.jpg";
+import SampleImage from "../assets/neo-brutalism-image1.webp";
 
 const meta = {
   title: "Components/Card",
@@ -15,10 +15,10 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     thumbnail: SampleImage,
-    date: "May 15th, 2023",
-    title: "Neo Brutallism",
+    date: "March 20th, 2025",
+    title: "Neo-ui-lib",
     description:
-      "Neobrutalism is an aesthetic characterized by high contrast elements, bright colors, and bold shapes. It is often used to make a statement, as it is meant to be eye-catching and stand out to the viewer. It is also used in user interface and web design, with features such as vibrant colors and bold shapes. Neobrutalism can also be used in print design, with an example being a bold shape with a vibrant color fill applied to it.",
+      "Neo-ui-lib is an aesthetic characterized by high contrast elements, bright colors, and bold shapes. It is often used to make a statement, as it is meant to be eye-catching and stand out to the viewer. It is also used in user interface and web design, with features such as vibrant colors and bold shapes. Neo-ui-lib can also be used in print design, with an example being a bold shape with a vibrant color fill applied to it.",
     callToActionText: "Get Started",
     calllToActionLink: "/overview",
   },

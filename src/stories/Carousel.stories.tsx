@@ -1,46 +1,41 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import Carousel from '../components/Carousel';
+import type { Meta, StoryObj } from "@storybook/react";
+import Carousel from "../components/Carousel";
 
-const meta: Meta<typeof Carousel> = {
-  title: 'Components/Carousel',
+const meta = {
+  title: "Components/Carousel",
   component: Carousel,
-  parameters: {
-    layout: 'centered',
-  },
-  tags: ['autodocs'],
-  argTypes: {
-    items: {
-      control: 'object',
-      description: 'An array of React nodes to display in the carousel',
-    },
-  },
-};
+  tags: ["autodocs"],
+} satisfies Meta<typeof Carousel>;
 
 export default meta;
-
 type Story = StoryObj<typeof meta>;
 
-const sampleItems = [
-  <div key="1" className="text-2xl font-bold">Slide 1</div>,
-  <div key="2" className="text-2xl font-bold">Slide 2</div>,
-  <div key="3" className="text-2xl font-bold">Slide 3</div>,
-  <div key="4" className="text-2xl font-bold">Slide 4</div>,
+const sampleSlides = [
+  <div key="1" className="w-full h-full bg-pink-200 flex items-center justify-center">
+    <h2 className="text-2xl font-bold">Slide 1</h2>
+  </div>,
+  <div key="2" className="w-full h-full bg-yellow-200 flex items-center justify-center">
+    <h2 className="text-2xl font-bold">Slide 2</h2>
+  </div>,
+  <div key="3" className="w-full h-full bg-cyan-200 flex items-center justify-center">
+    <h2 className="text-2xl font-bold">Slide 3</h2>
+  </div>,
 ];
 
-export const Default: Story = {
+export const Primary: Story = {
   args: {
-    items: sampleItems,
+    items: sampleSlides,
   },
 };
 
-export const ThreeItems: Story = {
+export const SingleSlide: Story = {
   args: {
-    items: sampleItems.slice(0, 3),
+    items: [sampleSlides[0]],
   },
 };
 
-export const SingleItem: Story = {
+export const TwoSlides: Story = {
   args: {
-    items: [sampleItems[0]],
+    items: [sampleSlides[0], sampleSlides[1]],
   },
 }; 

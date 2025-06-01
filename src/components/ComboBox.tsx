@@ -114,4 +114,4 @@ const ComboBox: React.FC<ComboBoxProps> = ({ options, placeholder = 'Select an o
   );
 };
 
-export default ComboBox; 
+export default ComboBox;
