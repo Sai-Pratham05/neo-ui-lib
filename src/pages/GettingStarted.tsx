@@ -35,7 +35,7 @@ const GettingStarted = () => {
             <Checkbox />
             <p className="ml-2  -mt-1.5 align-top">
               <strong>Completely Free:</strong> Yes, you read that right!
-              Neo-Brutalism UI library is absolutely free. Enhance your webpages
+              Neo-ui-lib is absolutely free. Enhance your webpages
               with stunning designs without spending a dime. Unlock your
               creativity and create impactful websites without breaking your
               budget.
@@ -55,7 +55,7 @@ const GettingStarted = () => {
             <strong>Note:</strong> If you are a React user, I highly recommend
             cloning{" "}
             <a
-              href="https://github.com/marieooq/neo-brutalism-ui-library"
+              href="https://github.com/Sai-Pratham05/neo-ui-lib"
               target="_blank"
               className="underline font-bold "
             >
@@ -64,7 +64,7 @@ const GettingStarted = () => {
             and running Storybook. The instructions for how it works are
             described in{" "}
             <a
-              href="https://github.com/marieooq/neo-brutalism-ui-library"
+              href="https://github.com/Sai-Pratham05/neo-ui-lib"
               target="_blank"
               className="underline font-bold "
             >
