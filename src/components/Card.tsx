@@ -18,7 +18,7 @@ const Card = ({
   calllToActionLink,
 }: CardType) => {
   return (
-    <div className="w-full max-w-2xl border-black border-2 rounded-md hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white flex flex-col">
+    <div className="w-full max-w-2xl h-full md:h-[540px] 2xl:h-[700px] border-black border-2 rounded-md hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white flex flex-col">
       <Link to={calllToActionLink} className="flex flex-col flex-grow">
         <article className="w-full h-full flex flex-col flex-grow">
           <figure className="w-full p-3">
