@@ -1,6 +1,7 @@
 const progressBarMarkup = (): string => {
   const currentValue = 70;
-  const roundedClass = "full"; // or "md" or "none"
+  type RoundedType = "full" | "md" | "none";
+  const roundedClass: RoundedType = "full";
   const colorName = "lime"; // Example color
 
   // Simplified color mapping for example
@@ -13,9 +14,9 @@ const progressBarMarkup = (): string => {
   const bgColor = colorStyles[colorName] || "#A3E635"; // Default to lime
 
   let borderRadiusStyle = "border-radius: 9999px;"; // for rounded="full"
-  if (roundedClass === "md") {
+  if (roundedClass === "md" as RoundedType) {
     borderRadiusStyle = "border-radius: 0.375rem;";
-  } else if (roundedClass === "none") {
+  } else if (roundedClass === "none" as RoundedType) {
     borderRadiusStyle = "border-radius: 0px;";
   }
 

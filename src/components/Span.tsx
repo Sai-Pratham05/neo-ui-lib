@@ -12,7 +12,7 @@ const Span = ({
   text,
   style = "brutal",
   size = "md",
-  color = "black",
+  color = "violet",
   className,
 }: SpanType) => {
   return (
