@@ -63,12 +63,12 @@ const Home = () => {
           <div className="flex-1 w-full h-full max-h-[600px] border-black border-2 rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
             <img
               src={PromotionImage}
-              alt="Graphic of a woman using a laptop with NEO-BRUTALISM UI design elements and colorful, bold shapes displayed on the screen."
+              alt="Graphic of a design elements and colorful, bold shapes displayed on the screen."
               className="w-full h-full max-h-[600px] object-cover hidden md:inline"
             />
             <img
               src={PromotionImageMobile}
-              alt="Graphic of a woman using a laptop with NEO-BRUTALISM UI design elements and colorful, bold shapes displayed on the screen."
+              alt="Graphic of a design elements and colorful, bold shapes displayed on the screen."
               className="w-full h-full max-h-[600px] object-cover inline md:hidden"
             />
           </div>
